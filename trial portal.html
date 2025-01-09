@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume Upload</title>
+<link rel="stylesheet" href="tr.css"> 
+</head>
+<body>
+  <div class="container">
+    <div class="background-image"></div>
+    <div class="form-container">
+      <h1>Upload Your Resume</h1>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="jobProfile">Job Profile:</label>
+        <input type="text" id="jobProfile" name="jobProfile" required>
+
+        <label for="experience">Experience (in years):</label>
+        <input type="number" id="experience" name="experience" required>
+
+        <label for="currentCompany">Current Working Company:</label>
+        <input type="text" id="currentCompany" name="currentCompany" required>
+
+        <label for="resume">Select Your Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+        <input type="submit" value="Upload Resume">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
